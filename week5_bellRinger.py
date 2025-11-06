@@ -33,16 +33,36 @@ reverse_i_have_a_dream = print (i_have_a_dream[: :-1])
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
 
+famous_quote = "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
+
+dash_index = famous_quote.find('-')
+extracted_name = famous_quote[dash_index + 2:]  # +2 to skip "- "
+
+print(extracted_name)
 # Manipulating Words:
 # Given the string info = "Python is fun. Fun is good. Good is subjective.",
 # a. Extract the word 'subjective' without knowing its exact position.
 # b. Extract every third word.
 # c. Reverse the positions of the words, but keep the characters in each word in the same order.
-
+info = "Python is fun. Fun is good. Good is subjective." 
+third_letter = print(info[::3])
+m_index = print(info.index('subjective'))
+extracted_word = print (info[36:])
+words = info.split()
+print(words)
+reversed_words = ' '. join(reversed(words))
+print(reversed_words)
 # Problem Set 3: String Methods
 # Upper & Lower:
 # Convert the following text to lowercase: "MAY THE FORCE BE WITH YOU."
-
+text = "MAY THE FORCE BE WITH YOU"
+lowercase_string = text.lower()
+print(lowercase_string)
+motto = ("Make","hastle","slowly.")
+joined_motto= '/'.join(motto)
+print(joined_motto)
+joined_motto_split= joined_motto.split('a')
+print (joined_motto_split)
 # String Joining and Splitting:
 # Given the list motto = ["Make", "haste", "slowly."],
 # a. Convert the list into a single string.
@@ -52,13 +72,21 @@ reverse_i_have_a_dream = print (i_have_a_dream[: :-1])
 # Modify the sentence: "Life is what happens when you are busy making other plans."
 # a. Replace "busy" with "distracted".
 # b. Replace "plans" with "mistakes".
-
+sentence = "Life is what happens when you are busy making other plans."
+replaced_sentence = sentence.replace("busy", "distracted").replace("plans", "mistakes")
+print(replaced_sentence) 
 # Problem Set 4: String Properties and Advanced Operations
 # Repetition:
 # Concatenate the word "Iteration" 7 times.
-
+repeated_word = "Iteration " * 7
+print(repeated_word)
 # Word Search:
 # Check if the word "moonlight" appears in the quote: "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
+word = "moonlight"
+quote = "With freedom, books, flowers, and the moon, who could could be happy? - Oscar Wilde"
+
+word_in_quote = word in quote
+print(word_in_quote)
 
 # Length and Count:
 # a. Calculate the number of characters (including spaces and punctuation) in the word/phrase: "Supercalifragilisticexpialidocious".
