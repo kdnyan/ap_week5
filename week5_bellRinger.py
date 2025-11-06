@@ -4,9 +4,14 @@
 # a. Retrieve the 5th character.
 # b. Retrieve the second to last character.
 # c. Find the first occurrence of the letter 'c'.
-
+magic = "abracadabra"
+fifth_char = print(magic[4])
+second_to_last_char = print(magic[-2])
+first_c_index = print(magic.index('c'))
+first_c_index = print(magic.index('r'))
+last_a_index = print(magic.rindex('a'))
 # Advanced Slicing:
-# Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz',
+# Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz'
 # a. Extract the letters 'hij'.
 # b. Extract every second letter starting from 'a' to 'm'.
 # c. Reverse the entire string using slicing.
