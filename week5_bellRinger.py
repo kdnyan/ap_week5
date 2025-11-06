@@ -12,11 +12,24 @@ first_c_index = print(magic.index('r'))
 last_a_index = print(magic.rindex('a'))
 # Advanced Slicing:
 # Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+hij = print(alphabet.index('hij'))
+hij2 = print (alphabet[7:10])
+
+
 # a. Extract the letters 'hij'.
 # b. Extract every second letter starting from 'a' to 'm'.
+every_second = print(alphabet[0:13:2])
+m_index = print(alphabet.index('m'))
 # c. Reverse the entire string using slicing.
-
+reverse_alphabet = print(alphabet[: :-1])
 # Problem Set 2: Extracting Information
+
+
+i_have_a_dream = "And so let freedom ring. From the prodigious hilltops of New Hampshire, let freedom ring! From the mighty mountains of New York, let freedom ring! From the Alleghenies of Pennsylvania, let freedom ring! From the snow-capped Rockies of Colorado, let freedom ring! From the curvaceous slopes of California, let freedom ring! But not only that: Let freedom ring from Stone Mountain of Georgia. Let freedom ring from Lookout Mountain of Tennessee. Let freedom ring from every hill and molehill of Mississippi, from every mountainside, let freedom ring."
+reverse_i_have_a_dream = print (i_have_a_dream[: :-1])
+
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
 
